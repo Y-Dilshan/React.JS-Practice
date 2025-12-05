@@ -60,3 +60,18 @@ createRoot(document.getElementById('root')).render(
   <Car/>
 ); */
 
+// If statement
+
+function Fruit(){
+  const X = 5;
+  let y = "Applle";
+  if(X < 10){
+    y = "Banana";
+  }
+  return(
+    <h1>{y}</h1>
+  );
+}
+createRoot(document.getElementById('root')).render(
+  <Fruit/>
+);
