@@ -88,3 +88,43 @@ createRoot(document.getElementById('root')).render(
 ); */
 
 // class component
+/* class Car extends React.Component{
+  constructor(){
+    super();
+    this.state={color:"red"};
+  }
+  render(){
+    return(
+      <h2>I have a {this.state.color} car!</h2>
+    );
+  }
+}
+createRoot(document.getElementById('root')).render(
+  <Car />
+); */
+
+// component in component
+
+class Car extends React.Component{
+  render(){
+    return(
+      <h2>I have a {this.props.color} car!</h2>
+    );
+  }
+}
+createRoot(document.getElementById('root')).render(
+  <Car color="red" />
+);
+class Garage extends React.Component{
+  render(){
+    return(
+      <>
+      <h1>Who lives in my garage?</h1>
+      <Car color="red" />
+      </> 
+    );
+  }
+}
+createRoot(document.getElementById('root')).render(
+  <Garage />
+);
