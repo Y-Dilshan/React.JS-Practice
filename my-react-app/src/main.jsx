@@ -62,7 +62,7 @@ createRoot(document.getElementById('root')).render(
 
 // If statement
 
-function Fruit(){
+/* function Fruit(){
   const X = 5;
   let y = "Applle";
   if(X < 10){
@@ -74,4 +74,17 @@ function Fruit(){
 }
 createRoot(document.getElementById('root')).render(
   <Fruit/>
-);
+); */
+
+// Props- 
+
+/* function Car(Props){
+  return(
+    <h2>I have a {Props.color} car!</h2>
+  );
+}
+createRoot(document.getElementById('root')).render(
+  <Car color="red"/>
+); */
+
+// class component
